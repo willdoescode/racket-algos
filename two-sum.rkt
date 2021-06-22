@@ -1,6 +1,7 @@
 #lang racket
 
 (define (two-sum target nums)
+  "https://leetcode.com/problems/two-sum/"
   (define known (make-hash))
   (define curr-v 0) (define curr-i 0)
   (for ([val nums] [idx (in-naturals)])

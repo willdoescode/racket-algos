@@ -1,6 +1,7 @@
 #lang racket
 
 (define (remove-outer-parens s)
+  "https://leetcode.com/problems/remove-outermost-parentheses/"
   (define depth 0)
   (define res "")
   (for ([c s])
