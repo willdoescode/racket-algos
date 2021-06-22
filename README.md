@@ -1,1 +1,5 @@
-# Trying some algorithms in racket
+# Algorithms in Racket Lang
+
+```shell
+racket main.rkt
+```
