@@ -6,6 +6,7 @@
 (require "remove-dups.rkt")
 (require "count-upper.rkt")
 (require "reverse-integer.rkt")
+(require "length-of-last-word.rkt")
 
 (check-equal? (two-sum 5 '(1 2 3 4)) '(1 2))
 (check-equal? (two-sum 21 '(0 2 11 19 90)) '(1 3))
@@ -25,3 +26,7 @@
 (check-equal? (reverse-integer 123) 321)
 (check-equal? (reverse-integer -123) -321)
 (check-equal? (reverse-integer 120) 21)
+
+(check-equal? (length-of-last-word "Hello World") 5)
+(check-equal? (length-of-last-word "Hello ") 0)
+(check-equal? (length-of-last-word " ") 0)
