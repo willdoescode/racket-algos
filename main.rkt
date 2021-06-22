@@ -8,6 +8,7 @@
 (require "reverse-integer.rkt")
 (require "length-of-last-word.rkt")
 (require "first-missing-positive.rkt")
+(require "num-is-palindrome.rkt")
 
 (check-equal? (two-sum 5 '(1 2 3 4)) '(1 2))
 (check-equal? (two-sum 21 '(0 2 11 19 90)) '(1 3))
@@ -35,3 +36,7 @@
 (check-equal? (first-missing-positive '(1 2 0)) 3)
 (check-equal? (first-missing-positive '(3 4 -1 1)) 2)
 (check-equal? (first-missing-positive '(7 8 9 11 12)) 1)
+
+(check-equal? (num-is-palindrome 121) #t)
+(check-equal? (num-is-palindrome -121) #f)
+(check-equal? (num-is-palindrome 10) #f)
