@@ -5,6 +5,7 @@
 (require "remove-outer-parens.rkt")
 (require "remove-dups.rkt")
 (require "count-upper.rkt")
+(require "reverse-integer.rkt")
 
 (check-equal? (two-sum 5 '(1 2 3 4)) '(1 2))
 (check-equal? (two-sum 21 '(0 2 11 19 90)) '(1 3))
@@ -20,3 +21,7 @@
 (check-equal? (count-upper "HeLlO wOrLd") 5)
 (check-equal? (count-upper "no uppers") 0)
 (check-equal? (count-upper "Some uppers") 1)
+
+(check-equal? (reverse-integer 123) 321)
+(check-equal? (reverse-integer -123) -321)
+(check-equal? (reverse-integer 120) 21)
