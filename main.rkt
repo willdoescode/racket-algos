@@ -7,6 +7,7 @@
 (require "count-upper.rkt")
 (require "reverse-integer.rkt")
 (require "length-of-last-word.rkt")
+(require "first-missing-positive.rkt")
 
 (check-equal? (two-sum 5 '(1 2 3 4)) '(1 2))
 (check-equal? (two-sum 21 '(0 2 11 19 90)) '(1 3))
@@ -30,3 +31,7 @@
 (check-equal? (length-of-last-word "Hello World") 5)
 (check-equal? (length-of-last-word "Hello ") 0)
 (check-equal? (length-of-last-word " ") 0)
+
+(check-equal? (first-missing-positive '(1 2 0)) 3)
+(check-equal? (first-missing-positive '(3 4 -1 1)) 2)
+(check-equal? (first-missing-positive '(7 8 9 11 12)) 1)
